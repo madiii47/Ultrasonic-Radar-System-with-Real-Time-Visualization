@@ -62,18 +62,19 @@ The system relies on the physical Time-of-Flight (ToF) principle of high-frequen
 └── Docs/
     └── Project_Report.pdf    # Full documentation and circuit references
 ```
-How to Setup and Run
-Hardware Assembly: Wire the hardware components together on a breadboard using the designated Pin Connection Table.
 
-Deploy Firmware:
+## How to Setup and Run
 
-Open Hardware/radar_firmware.ino in the Arduino IDE.
-
-Connect your Arduino UNO to your PC via a USB cable.
-
-Select your board type, match the correct COM port, and hit Upload.
-
-Launch Visualization:
+1. **Hardware Assembly:** Wire the hardware components together on a breadboard using the designated Pin Connection Table.
+2. **Deploy Firmware:**
+   * Open `Hardware/radar_firmware.ino` in the Arduino IDE.
+   * Connect your Arduino UNO to your PC via a USB cable.
+   * Select your board type, match the correct COM port, and hit **Upload**.
+3. **Launch Visualization:**
+   * Download and launch the Processing IDE.
+   * Open `Software/radar_ui.pde`.
+   * Verify that the serial index string matches the COM port assigned to your Arduino board.
+   * Run the Processing script to open up your real-time graphical radar interface.
 
 Download and launch the Processing IDE.
 
