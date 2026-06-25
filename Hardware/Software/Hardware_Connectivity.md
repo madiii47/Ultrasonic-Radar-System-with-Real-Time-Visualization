@@ -19,5 +19,5 @@
 | SG90 Servo Motor | Power (Red) | 5V |
 | | Signal (Yellow/Orange) | Digital Pin 12 |
 | | Ground (Brown/Black) | GND |
-| Buzzer | Positive (+) | Digital Pin 7 |
+| Buzzer | Positive (+) | Digital Pin 9 |
 | | Negative (-) | GND |
