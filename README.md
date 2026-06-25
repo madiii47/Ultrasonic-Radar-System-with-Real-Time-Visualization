@@ -24,6 +24,14 @@ The system relies on the physical Time-of-Flight (ToF) principle of high-frequen
 
 3. **Data Streaming and Visualization:** The computed angle and distance parameters are packed and piped sequentially to a host PC over standard Serial Communication (UART protocol at a 9600 baud rate). The Processing software environment decodes the stream to render a live sweep animation, painting detected objects as active targets on screen.
 
+'''
+### Component List
+
+* **Microcontroller:** Arduino UNO
+* **Distance Sensor:** HC-SR04 Ultrasonic Sensor
+* **Actuator:** SG90 Micro Servo Motor
+* **Alert Subsystem:** 5V Active Buzzer
+* **Prototyping:** Breadboard, USB Interface Cable, and Solid/Stranded Jumper Wires
 ---
 ## How to Setup and Run
 
@@ -37,6 +45,7 @@ The system relies on the physical Time-of-Flight (ToF) principle of high-frequen
    * Open `Software/radar_ui.pde`.
    * Verify that the serial index string matches the COM port assigned to your Arduino board.
    * Run the Processing script to open up your real-time graphical radar interface.
+'''
 
 Download and launch the Processing IDE.
 
