@@ -1,1 +1,23 @@
+## Hardware Specifications and Pin Mapping
 
+### Component List
+
+* **Microcontroller:** Arduino UNO
+* **Distance Sensor:** HC-SR04 Ultrasonic Sensor
+* **Actuator:** SG90 Micro Servo Motor
+* **Alert Subsystem:** 5V Active Buzzer
+* **Prototyping:** Breadboard, USB Interface Cable, and Solid/Stranded Jumper Wires
+
+### Pin Connection Table
+
+| Component | Component Pin | Arduino UNO Pin |
+| :--- | :--- | :--- |
+| HC-SR04 Ultrasonic Sensor | VCC | 5V |
+| | Trig (Trigger) | Digital Pin 10 |
+| | Echo | Digital Pin 11 |
+| | GND | GND |
+| SG90 Servo Motor | Power (Red) | 5V |
+| | Signal (Yellow/Orange) | Digital Pin 12 |
+| | Ground (Brown/Black) | GND |
+| Buzzer | Positive (+) | Digital Pin 7 |
+| | Negative (-) | GND |
