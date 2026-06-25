@@ -25,44 +25,6 @@ The system relies on the physical Time-of-Flight (ToF) principle of high-frequen
 3. **Data Streaming and Visualization:** The computed angle and distance parameters are packed and piped sequentially to a host PC over standard Serial Communication (UART protocol at a 9600 baud rate). The Processing software environment decodes the stream to render a live sweep animation, painting detected objects as active targets on screen.
 
 ---
-
-## Hardware Specifications and Pin Mapping
-
-### Component List
-
-* **Microcontroller:** Arduino UNO
-* **Distance Sensor:** HC-SR04 Ultrasonic Sensor
-* **Actuator:** SG90 Micro Servo Motor
-* **Alert Subsystem:** 5V Active Buzzer
-* **Prototyping:** Breadboard, USB Interface Cable, and Solid/Stranded Jumper Wires
-
-### Pin Connection Table
-
-| Component | Component Pin | Arduino UNO Pin |
-| :--- | :--- | :--- |
-| HC-SR04 Ultrasonic Sensor | VCC | 5V |
-| | Trig (Trigger) | Digital Pin 10 |
-| | Echo | Digital Pin 11 |
-| | GND | GND |
-| SG90 Servo Motor | Power (Red) | 5V |
-| | Signal (Yellow/Orange) | Digital Pin 12 |
-| | Ground (Brown/Black) | GND |
-| Buzzer | Positive (+) | Digital Pin 7 |
-| | Negative (-) | GND |
-
----
-
-## Project Structure
-
-```text
-├── Hardware/
-│   └── radar_firmware.ino    # Arduino sketch for sensor control and data transmission
-├── Software/
-│   └── radar_ui.pde          # Processing script for graphical radar visualization
-└── Docs/
-    └── Project_Report.pdf    # Full documentation and circuit references
-```
-
 ## How to Setup and Run
 
 1. **Hardware Assembly:** Wire the hardware components together on a breadboard using the designated Pin Connection Table.
